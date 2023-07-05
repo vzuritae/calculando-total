@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Calculando el Total</title>
+</head>
+<body>
+    <div class="container">
+        <main class="card">
+            <img src="./assets/imgs/laptop.png" alt="Laptop gamer AMD">
+    
+            <h4>Laptop Gamer AMD</h4>
+    
+            <input class="input" type="number">
+    
+            <select class="selector">
+                <option value="black">Black</option>
+                <option value="silver">Silver</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="darkgreen">Darkgreen</option>
+                <option value="darkblue">Darkblue</option>
+            </select>
+    
+            <p class="parrafo-precio">Precio: $<span class="precio">400000</span></p> 
+    
+            <button class="botón" onclick="
+
+                input = document.querySelector('.input')
+                cantidad = document.querySelector('.cantidad')
+                cantidad.innerHTML = input.value
+
+                selector = document.querySelector('.selector')
+                colorSeleccionado = document.querySelector('.color_seleccionado')
+                colorSeleccionado.style.backgroundColor = selector.value
+
+                precio = document.querySelector('.precio')
+                precioNumerico = Number(precio.innerHTML) 
+                multiplicacion = precioNumerico * input.value
+                total = document.querySelector('.total')
+                total.innerHTML = multiplicacion
+                ">
+                Calcular Total
+            </button>
+        </main>
+
+        <section class="total_calculado">
+            <p>Total: $<span class="total">0</span></p>
+            <p>Cantidad: <span class="cantidad">0</span></p>
+            <div class="color">
+                <p>Color:</p>
+                <div class="color_seleccionado"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

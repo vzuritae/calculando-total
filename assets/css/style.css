@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+}
+
+/*card*/
+
+.card {
+    background-color: #7BA238;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 500px;
+    outline: 2px solid #000000;
+    border-radius: 10px;
+}
+
+img {
+    width: 300px;
+}
+
+.input {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.selector {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.parrafo-precio {
+    font-size: 20px;
+}
+
+.botón {
+    background-color: orange;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*total*/
+
+.total_calculado {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color_seleccionado {
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: 2px solid #000000;
+}

@@ -13,7 +13,7 @@
     
             <h4>Laptop Gamer AMD</h4>
     
-            <input class="input" type="number">
+            <input class="input" type="number" min="1">
     
             <select class="selector">
                 <option value="black">Black</option>
@@ -28,19 +28,19 @@
     
             <button class="botón" onclick="
 
-                input = document.querySelector('.input')
-                cantidad = document.querySelector('.cantidad')
+                let input = document.querySelector('.input')
+                let cantidad = document.querySelector('.cantidad')
                 cantidad.innerHTML = input.value
 
-                selector = document.querySelector('.selector')
-                colorSeleccionado = document.querySelector('.color_seleccionado')
+                let selector = document.querySelector('.selector')
+                let colorSeleccionado = document.querySelector('.color_seleccionado')
                 colorSeleccionado.style.backgroundColor = selector.value
 
-                precio = document.querySelector('.precio')
-                precioNumerico = Number(precio.innerHTML) 
-                multiplicacion = precioNumerico * input.value
-                total = document.querySelector('.total')
-                total.innerHTML = multiplicacion
+                let precio = document.querySelector('.precio')
+                let precioNumerico = Number(precio.innerHTML) 
+                let multiplicacion = precioNumerico * input.value
+                let total = document.querySelector('.total')
+                total.innerHTML = multiplicacion.toLocaleString()
                 ">
                 Calcular Total
             </button>
